@@ -1,0 +1,45 @@
+{
+  "name": "vantadge-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start -p 3002",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "next-auth": "^4.24.7",
+    "axios": "^1.7.2",
+    "@tanstack/react-query": "^5.40.0",
+    "react-hook-form": "^7.52.0",
+    "zod": "^3.23.8",
+    "@hookform/resolvers": "^3.6.0",
+    "react-hot-toast": "^2.4.1",
+    "framer-motion": "^11.2.12",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.395.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0",
+    "@tiptap/react": "^2.4.0",
+    "@tiptap/pm": "^2.4.0",
+    "@tiptap/starter-kit": "^2.4.0",
+    "@tiptap/extension-image": "^2.4.0",
+    "@tiptap/extension-link": "^2.4.0",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.0"
+  }
+}
