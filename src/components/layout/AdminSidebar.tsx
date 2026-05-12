@@ -8,6 +8,7 @@ import {
   CreditCard, Users, Mail, Settings, LogOut, Menu, X,
   ChevronRight, Shield
 } from "lucide-react";
+import logo from "../../public/images/logo-4.png";
 import Image from "next/image";
 
 interface NavItem {
@@ -47,18 +48,49 @@ export function AdminSidebar() {
       {/* Header */}
       <div className="p-4 border-b border-white/5 flex items-center justify-between">
         {!collapsed && (
-          <div>
-            <span className="font-script text-xl text-brand-mint block leading-none">
+          <div className="flex items-center gap-2">
+            <div className="relative w-10 h-10 shrink-0">
               <Image
-                src="/images/logo.png" 
-                alt="logo" 
-                fill 
+                // src="/images/logo3.png"
+                src={logo}
+                alt="Vantadge Logo"
+                fill
+                sizes="80px"
                 className="object-contain"
+                priority
+                // width={40}
+                // height={40}
+                // className="object-contain"
+                // priority
               />
-              Vantadge
-            </span>
-            <span className="font-body text-[10px] text-gray-600 tracking-widest uppercase">Admin</span>
+            </div>
+
+            <div>
+              <span className="font-script text-xl text-brand-mint block leading-none">
+                Vantadge
+              </span>
+
+              <span className="font-body text-[10px] text-gray-600 tracking-widest uppercase">
+                Admin
+              </span>
+            </div>
           </div>
+
+
+          // <div>
+          //   <span className="font-script text-xl text-brand-mint block leading-none">
+          //     <div className="relative w-10 h-10 shrink-0">
+          //       <Image
+          //         src="/images/logo.png" 
+          //         alt="logo" 
+          //         fill 
+          //         className="object-contain"
+          //       />
+          //     </div>
+          //     Vantadge
+          //   </span>
+          //   <span className="font-body text-[10px] text-gray-600 tracking-widest uppercase">Admin</span>
+          // </div>
         )}
         <button
           onClick={() => setCollapsed(!collapsed)}
